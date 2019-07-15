@@ -1,0 +1,118 @@
+body{
+	color: #67b137;
+	font-family: 'Courier New', Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	font-weight: 300;
+	background-color: rgb(40, 44, 44);
+}
+
+div#div-body {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+div#div-screen {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    white-space: nowrap;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0;
+	overflow: hidden;
+	display: block;
+	background-color: rgb(40, 44, 44);
+}
+
+
+@media (max-width: 680px) {
+	div#div-body {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	div#div-screen {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		border: 0;
+		overflow: hidden;
+		display: block;
+		background: rgb(150, 150, 150);
+	}
+}
+
+.link{
+	color: #ff903f;
+    text-decoration: none;
+}
+
+/* Sticky Header 
+--------------------------*/
+
+.header-container {
+	text-align: center;
+	position: relative;
+	padding-bottom: 6rem;
+	margin-bottom: 10%;
+}
+
+@media (max-width: 680px) {
+	.header-container { 
+		margin-bottom: 5%; 
+		padding-bottom: 3rem;
+	}
+}
+
+
+/* 1. Site header 
+--------------------------*/
+
+.site-title {
+    font-size: 4.4rem;
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+}
+
+.site-description {
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+
+@media (max-width: 680px) {
+	.site-title {
+		font-size: 3rem;
+		margin-top: 5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.site-description {
+		font-size: 1.5rem;
+		margin-bottom: 3rem;
+	}
+}
+
+/* 2. Navigation
+-------------------------*/
+
+
+
+/* 3. Body
+-------------------------*/
+
+
+
+/* 4. Footer
+-------------------------*/
+
+.copyright-text{
+	font-size: 1.3rem;
+	color: #ff903f;
+    text-align: right;
+}
+
+@media (max-width: 680px) {
+	.copyright-text{
+		font-size: 1rem;
+	}
+}
