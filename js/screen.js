@@ -50,7 +50,6 @@ function screensaver_start() {
     animate();
 }
 
-
 function screensaver_stop() {
     div_body.style.display = 'block'; 
     div_screen.style.display = 'none';
@@ -107,3 +106,6 @@ window.addEventListener("click", screensaver_stop);
 
 // end animation when window is touched on touchscreen
 window.addEventListener("touchstart", screensaver_stop);
+
+// end animation when mouse moved
+window.addEventListener("mousemove", screensaver_stop);
