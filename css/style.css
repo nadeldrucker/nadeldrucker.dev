@@ -38,7 +38,7 @@ div#div-screen {
 		border: 0;
 		overflow: hidden;
 		display: block;
-		background: rgb(150, 150, 150);
+		background-color: rgb(40, 44, 44);
 	}
 }
 
