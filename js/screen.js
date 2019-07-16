@@ -1,13 +1,13 @@
-
+// initialize body displayed and screensaver hidden
 var div_screen = document.getElementById("div-screen");
 var div_body = document.getElementById("div-body");
-
-var can = document.getElementById("screen");
-
 div_body.style.display = 'block'; 
 div_screen.style.display = 'none';
 
+var can = document.getElementById("screen");
 
+
+setTimeout(hide_body,5000);
 function hide_body() {
     div_body.style.display = 'none';
     div_screen.style.display = 'block'; 
@@ -15,7 +15,7 @@ function hide_body() {
     can.width = window.innerWidth;
     can.height = window.innerHeight;
 }
-setTimeout(hide_body,5000);
+
 
 function show_body() {
     div_body.style.display = 'block'; 
@@ -67,5 +67,9 @@ function show_body() {
 	}
 	document.addEventListener("DOMContentLoaded", function () {
 		animate();
-	});
+    });
+    
+    // end animation when window is resized
+    window.addEventListener("resize", show_body);
+
 }());
