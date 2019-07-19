@@ -3,3 +3,4 @@ subtitle: ""
 sass:
   sass_dir: _sass
   style: compressed
+exclude: ['README.md', 'docker-compose.yml']
