@@ -1,1 +1,5 @@
-theme: jekyll-theme-cayman
+title: "Nadeldrucker"
+subtitle: ""
+sass:
+  sass_dir: _sass
+  style: compressed
