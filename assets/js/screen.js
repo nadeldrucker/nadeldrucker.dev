@@ -1,5 +1,8 @@
 const TIMEOUT = 5000;
 
+const COLORS = ['#1abc9c', '#2ecc71', '#3498db', 
+        '#9b59b6', '#f1c40f', '#e67e22', '#e74c3c'];
+
 // initialize body displayed and screensaver hidden
 var div_screen = document.getElementById("div-screen");
 var div_body = document.getElementById("div-body");
@@ -25,7 +28,6 @@ var sizey = 50;
 var speedx = 4;
 var speedy = 4;
 
-var colors =['red', 'green', 'blue'];
 var c = 0;
 // ---
 
@@ -75,17 +77,17 @@ function animate() {
         // change both movement directions and color once
         speedx = -speedx;
         speedy = -speedy;
-        c = (c + 1) % 3;
+        c = (c + 1) % COLORS.length;
     } else {
         if (c1) {
             // change movement direction and color
             speedx = -speedx;
-            c = (c + 1) % 3;
+            c = (c + 1) % COLORS.length;
         }		
         if (c2) {
             // change movement direction and color
             speedy = -speedy;
-            c = (c + 1) % 3;
+            c = (c + 1) % COLORS.length;
         }
     }
     draw();
@@ -94,7 +96,7 @@ function animate() {
 // draw rectangle in position x,y
 function draw() {
     context.clearRect(0, 0, can.width, can.height);
-    context.fillStyle = colors[c];
+    context.fillStyle = COLORS[c];
     context.fillRect(x, y, sizex, sizey);
 }
 
