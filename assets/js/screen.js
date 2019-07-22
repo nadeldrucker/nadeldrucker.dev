@@ -1,7 +1,7 @@
 const TIMEOUT = 5000;
 
 const COLORS = ['#1abc9c', '#2ecc71', '#3498db', 
-        '#9b59b6', '#f1c40f', '#e67e22', '#e74c3c'];
+        '#9b59b6', '#e74c3c', '#e67e22', '#f1c40f'];
 
 // initialize body displayed and screensaver hidden
 var div_screen = document.getElementById("div-screen");
